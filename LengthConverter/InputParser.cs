@@ -6,6 +6,11 @@ namespace LengthConverter
 {
     public class InputParser
     {
+        public static string ConvertInput(string input, IConvertLengths converter)
+        {
+            return ConvertInput(input.Split(' '), converter);
+        }
+
         public static string ConvertInput(string[] args, IConvertLengths converter)
         {
             const string correctFormat = "Please use format '<length> <unit> in <unit>'";

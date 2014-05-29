@@ -17,6 +17,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LengthConverter.Tests", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LengthConverter.Extensions", "LengthConverter.Extensions\LengthConverter.Extensions.csproj", "{86A620A7-C149-43C8-946C-78E8BD7E57B3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Thrift", "Thrift", "{92E16BB2-1724-4F83-945C-CD36F7465240}"
+	ProjectSection(SolutionItems) = preProject
+		Thrift\convert.thrift = Thrift\convert.thrift
+		Thrift\gen-csharp\ConvertSvc.cs = Thrift\gen-csharp\ConvertSvc.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thrift", "Thrift\ThriftLib\Thrift.csproj", "{499EB63C-D74C-47E8-AE48-A2FC94538E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftConvert.Server", "Thrift\ThriftConvert\ThriftConvert.Server.csproj", "{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftConvert.Client", "Thrift\ThriftConvert.Client\ThriftConvert.Client.csproj", "{D4A72199-65CB-4D25-BF31-58B513632516}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +51,25 @@ Global
 		{86A620A7-C149-43C8-946C-78E8BD7E57B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86A620A7-C149-43C8-946C-78E8BD7E57B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86A620A7-C149-43C8-946C-78E8BD7E57B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A72199-65CB-4D25-BF31-58B513632516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A72199-65CB-4D25-BF31-58B513632516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A72199-65CB-4D25-BF31-58B513632516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A72199-65CB-4D25-BF31-58B513632516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{499EB63C-D74C-47E8-AE48-A2FC94538E9D} = {92E16BB2-1724-4F83-945C-CD36F7465240}
+		{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C} = {92E16BB2-1724-4F83-945C-CD36F7465240}
+		{D4A72199-65CB-4D25-BF31-58B513632516} = {92E16BB2-1724-4F83-945C-CD36F7465240}
 	EndGlobalSection
 EndGlobal

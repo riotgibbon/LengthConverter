@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,16 +20,8 @@ namespace LengthConverter.Converter
         {
             var catalog = new AggregateCatalog();
             catalog.Catalogs.Add(new AssemblyCatalog(typeof(MEFConverter).Assembly));
-            try
-            {
-                catalog.Catalogs.Add(new DirectoryCatalog("Extensions"));
-                catalog.Catalogs.Add(new DirectoryCatalog("."));
-            }
-            catch (Exception e)
-            {
-                //ignore missing directory
-            }
-            
+            catalog.Catalogs.Add(new DirectoryCatalog("."));
+            if(Directory.Exists("Extensions")) catalog.Catalogs.Add(new DirectoryCatalog("Extensions"));
 
             _container = new CompositionContainer(catalog);
 
