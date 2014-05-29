@@ -3,7 +3,7 @@ sys.path.append("gen-py")
 from thrift.transport import TSocket 
 from thrift.protocol import TBinaryProtocol
 
-from convertLength import *
+from convertLength import ConvertSvc
 print("[Client] started")
 socket = TSocket.TSocket("localhost", 9090) 
 socket.open()
