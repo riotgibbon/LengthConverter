@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LengthConverter.Extensions"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Thrift", "Thrift", "{92E16BB2-1724-4F83-945C-CD36F7465240}"
 	ProjectSection(SolutionItems) = preProject
-		Thrift\convert.thrift = Thrift\convert.thrift
+		Thrift\convertLength.thrift = Thrift\convertLength.thrift
 		Thrift\gen-csharp\ConvertSvc.cs = Thrift\gen-csharp\ConvertSvc.cs
 	EndProjectSection
 EndProject
@@ -28,6 +28,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftConvert.Server", "Thrift\ThriftConvert\ThriftConvert.Server.csproj", "{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftConvert.Client", "Thrift\ThriftConvert.Client\ThriftConvert.Client.csproj", "{D4A72199-65CB-4D25-BF31-58B513632516}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Python", "Python", "{90F80D2C-3433-48B8-9186-F5EAF0BF3CF1}"
+	ProjectSection(SolutionItems) = preProject
+		Thrift\ThriftConvert.Python\convert.py = Thrift\ThriftConvert.Python\convert.py
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,5 +76,6 @@ Global
 		{499EB63C-D74C-47E8-AE48-A2FC94538E9D} = {92E16BB2-1724-4F83-945C-CD36F7465240}
 		{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C} = {92E16BB2-1724-4F83-945C-CD36F7465240}
 		{D4A72199-65CB-4D25-BF31-58B513632516} = {92E16BB2-1724-4F83-945C-CD36F7465240}
+		{90F80D2C-3433-48B8-9186-F5EAF0BF3CF1} = {92E16BB2-1724-4F83-945C-CD36F7465240}
 	EndGlobalSection
 EndGlobal

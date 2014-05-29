@@ -44,7 +44,7 @@ namespace LengthConverter
                 }
             }
 
-            var output = string.Format("{0} {1} equals {2} {3}", inputLength, inputFormat, converted, outputFormat);
+            var output = string.Format("{0} {1} equals {2} {3}", inputLength, inputFormat, converted, outputFormat);
 
             return output;
         }
