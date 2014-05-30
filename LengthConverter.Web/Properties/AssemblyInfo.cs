@@ -1,12 +1,5 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="AssemblyInfo.cs" company="">
-//   Copyright © 2014 
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System;
-using System.Reflection;
-using System.Resources;
+ï»¿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -17,10 +10,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("LengthConverter.Web")]
-[assembly: AssemblyCopyright("Copyright © 2014 ")]
+[assembly: AssemblyCopyright("Copyright Â©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: NeutralResourcesLanguage("en-US")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -28,9 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c1f70cae-6741-4c22-9109-10c1dedd0373")]
-
-[assembly: CLSCompliant(true)]
+[assembly: Guid("54cac41d-f133-4f04-b6cb-efbe8c2706ef")]
 
 // Version information for an assembly consists of the following four values:
 //

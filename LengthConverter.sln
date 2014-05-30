@@ -34,18 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Python", "Python", "{90F80D
 		Thrift\ThriftConvert.Python\convert.py = Thrift\ThriftConvert.Python\convert.py
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{6178D1A0-AFF0-49E3-8319-930D19F2344A}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
-		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{A9213E7D-9F01-4B31-93C5-2C5907EF2C9E}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\Configurations\LengthConverterWeb-WAWS-dev.json = PublishScripts\Configurations\LengthConverterWeb-WAWS-dev.json
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LengthConverter.Web", "LengthConverter.Web\LengthConverter.Web.csproj", "{307F8341-1391-40B7-9B40-B5752C1494FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LengthConverter.Web", "LengthConverter.Web\LengthConverter.Web.csproj", "{1B5B2A20-FEA5-44C1-86B3-CEB50D717F89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,10 +70,10 @@ Global
 		{D4A72199-65CB-4D25-BF31-58B513632516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A72199-65CB-4D25-BF31-58B513632516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A72199-65CB-4D25-BF31-58B513632516}.Release|Any CPU.Build.0 = Release|Any CPU
-		{307F8341-1391-40B7-9B40-B5752C1494FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{307F8341-1391-40B7-9B40-B5752C1494FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{307F8341-1391-40B7-9B40-B5752C1494FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{307F8341-1391-40B7-9B40-B5752C1494FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B5B2A20-FEA5-44C1-86B3-CEB50D717F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5B2A20-FEA5-44C1-86B3-CEB50D717F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5B2A20-FEA5-44C1-86B3-CEB50D717F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5B2A20-FEA5-44C1-86B3-CEB50D717F89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +83,5 @@ Global
 		{F75AF498-D6C7-4B1E-A011-6BF82EC7F86C} = {92E16BB2-1724-4F83-945C-CD36F7465240}
 		{D4A72199-65CB-4D25-BF31-58B513632516} = {92E16BB2-1724-4F83-945C-CD36F7465240}
 		{90F80D2C-3433-48B8-9186-F5EAF0BF3CF1} = {92E16BB2-1724-4F83-945C-CD36F7465240}
-		{A9213E7D-9F01-4B31-93C5-2C5907EF2C9E} = {6178D1A0-AFF0-49E3-8319-930D19F2344A}
 	EndGlobalSection
 EndGlobal
