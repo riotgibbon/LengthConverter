@@ -423,7 +423,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Converter\" />
   </ItemGroup>
@@ -459,8 +458,10 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>if not exist $(TargetDir)\Extensions md $(TargetDir)\Extensions
-xcopy /y $(SolutionDir)\LengthConverter.Extensions\bin\Debug\LengthConverter.Extensions.dll  $(TargetDir)\Extensions</PostBuildEvent>
+    <PostBuildEvent>if not exist  $(ProjectDir)Extensions md  $(ProjectDir)Extensions
+if not exist  $(TargetDir)Extensions md  $(TargetDir)Extensions
+xcopy /y $(SolutionDir)\LengthConverter.Extensions\bin\Debug\LengthConverter.Extensions.dll $(ProjectDir)Extensions
+xcopy /y $(SolutionDir)\LengthConverter.Extensions\bin\Debug\LengthConverter.Extensions.dll $(TargetDir)Extensions</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
