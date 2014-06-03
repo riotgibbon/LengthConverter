@@ -1,9 +1,27 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app="converter">
 <head>
     <title></title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <script src="/Scripts/angular.js"></script>
+    <script src="app/js/controllers.js"></script>
 </head>
-<body>
-    Hello
+<body ng-controller="ConverterController as converter">
+    <p>1 + 5 = {{1+5}}</p>
+
+    <p>
+        <span>Length : </span>
+        <input ng-model="converter.length"></input>
+    </p>
+    <p>
+        <span>Input format : </span>
+        <select ng-model="converter.inputFormat" ng-options="unit for unit in converter.units"></select>
+    </p>
+    <p>
+        <span>Output  format: </span>
+        <select ng-model="converter.outputFormat" ng-options="unit for unit in converter.units"></select>
+    </p>
+
+    {{ converter.length }} {{ converter.inputFormat }} in {{ converter  .outputFormat }}
 </body>
 </html>
