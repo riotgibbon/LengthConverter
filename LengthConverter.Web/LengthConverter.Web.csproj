@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\js\controllers.js" />
+    <Content Include="Extensions\LengthConverter.Extensions.dll" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -458,10 +459,8 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>if not exist  $(ProjectDir)Extensions md  $(ProjectDir)Extensions
-if not exist  $(TargetDir)Extensions md  $(TargetDir)Extensions
-xcopy /y $(SolutionDir)\LengthConverter.Extensions\bin\Debug\LengthConverter.Extensions.dll $(ProjectDir)Extensions
-xcopy /y $(SolutionDir)\LengthConverter.Extensions\bin\Debug\LengthConverter.Extensions.dll $(TargetDir)Extensions</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
