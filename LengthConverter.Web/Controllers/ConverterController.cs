@@ -9,11 +9,11 @@ namespace LengthConverter.Web.Controllers
 {
     public class ConverterController : Controller
     {
-        private BasicConverter converter;
+        private IConvertLengths converter;
 
         public ConverterController()
         {
-            converter = new BasicConverter();
+            converter = new MEFConverter();
         }
         
         public ActionResult Formats()
