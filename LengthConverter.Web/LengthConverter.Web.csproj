@@ -99,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\js\controllers.js" />
-    <Content Include="Extensions\LengthConverter.Extensions.dll" />
+    <Content Include="LengthConverter.Extensions.dll" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
@@ -424,6 +424,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Extensions\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Converter\" />
   </ItemGroup>
